@@ -1,0 +1,10 @@
+{
+  "speakers": [
+    { "id":  1, "lastName":  "Иванов", "firstName":  "Иван", "middleName": "Иванович"},
+    { "id":  2, "lastName":  "Петров", "firstName":  "Петр", "middleName": "Петрович"}
+  ],
+
+  "bookInfo": [
+    {"id": 1, "bookName": "Азбука","author": "Иванов Иван", "pages": "33", "tags": "#суперкнига"}
+  ]
+}

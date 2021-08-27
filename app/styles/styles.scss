@@ -13,6 +13,12 @@ body {
 .body, .ember-view {
   height: 100%;
 }
+.error {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
 
 .footer {
   position: fixed;
@@ -49,6 +55,69 @@ a:hover {
   color: #263148;
 }
 
+.htop {
+  padding-top: 70px;
+  padding-bottom: 60px;
+}
+
+a.tag-link {
+  color: #007bff;
+}
+
+a.tag-link:hover {
+  text-decoration: underline;
+  color: #007bff;
+}
+
+.line-offset {
+  line-height: 2.5;
+}
+
+.card-button {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.navbar-panel {
+  padding: 16px 0;
+}
+
+.search {
+  width: 250px;
+}
+
+.edit-form {
+  padding-top: 40px;
+}
+
+.search-long {
+  min-width: 400px;
+}
+
+.fix-margin {
+  margin-top: -11px;
+}
+
+/* Bootstrap file styles
+-------------------------------------------------- */
+
+.input-group-lg .custom-file-label {
+  line-height: 1.7;
+  height: calc(1.5em + 1rem + 2px);
+}
+
+.input-group-lg .custom-file-label::after {
+  height: calc(1.5em + 1rem);
+}
+
+.custom-file-clear {
+  cursor: pointer;
+}
+
+.placeholder-color {
+  color: #6c757d;
+}
+
 /* Media queries
 -------------------------------------------------- */
 
@@ -57,12 +126,40 @@ a:hover {
     width: 4em;
     height: 4em;
   }
+
+  .form-inline .form-control:not(.search-only) {
+    width: 100px;
+  }
+
+  .form-inline .form-control.search-only {
+    width: inherit;
+  }
+
+  .search-long {
+    min-width: inherit;
+  }
+
+  .col-md-auto {
+    width: auto;
+  }
 }
 
 @media (min-width: 576px) {
   .desktop-icon {
     width: 6em;
     height: 6em;
+  }
+
+  .form-inline .form-control:not(.search-only) {
+    width: 130px;
+  }
+
+  .search-long {
+    min-width: inherit;
+  }
+
+  .col-md-auto {
+    width: auto;
   }
 }
 
@@ -71,12 +168,24 @@ a:hover {
     width: 7em;
     height: 7em;
   }
+
+  .form-inline .form-control:not(.search-only) {
+    width: inherit;
+  }
+
+  .search-long {
+    min-width: 250px;
+  }
 }
 
 @media (min-width: 992px) {
   .desktop-icon {
     width: 9em;
     height: 9em;
+  }
+
+  .search-long {
+    min-width: 400px;
   }
 }
 

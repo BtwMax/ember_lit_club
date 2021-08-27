@@ -8,5 +8,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="node_modules ember_lit_club" level="project" />
+    <orderEntry type="library" name="node_modules ember_lit_club" level="project" />
   </component>
 </module>
